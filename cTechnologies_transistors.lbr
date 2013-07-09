@@ -57,7 +57,7 @@
 <library>
 <packages>
 <package name="SOT23-BEC">
-<description>&lt;b&gt;TO-236&lt;/b&gt; ITT Intermetall</description>
+<description>TO-236 ITT Intermetall</description>
 <wire x1="1.4224" y1="0.6604" x2="1.4224" y2="-0.6604" width="0.127" layer="51"/>
 <wire x1="1.4224" y1="-0.6604" x2="-1.4224" y2="-0.6604" width="0.127" layer="51"/>
 <wire x1="-1.4224" y1="-0.6604" x2="-1.4224" y2="0.6604" width="0.127" layer="51"/>
@@ -327,6 +327,35 @@
 <technology name="">
 <attribute name="OC_FARNELL" value="1843676" constant="no"/>
 <attribute name="OC_TME" value="BSS123" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BC817*" prefix="Q">
+<description>&lt;b&gt;NPN Transistor&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="NPN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="SMD" package="SOT23-BEC">
+<connects>
+<connect gate="G$1" pin="B" pad="B"/>
+<connect gate="G$1" pin="C" pad="C"/>
+<connect gate="G$1" pin="E" pad="E"/>
+</connects>
+<technologies>
+<technology name="-16">
+<attribute name="OC_FARNELL" value="1798077" constant="no"/>
+<attribute name="OC_TME" value="BC817-16" constant="no"/>
+</technology>
+<technology name="-25">
+<attribute name="OC_FARNELL" value="1081224" constant="no"/>
+<attribute name="OC_TME" value="BC817-25" constant="no"/>
+</technology>
+<technology name="-40">
+<attribute name="OC_FARNELL" value="1081225" constant="no"/>
+<attribute name="OC_TME" value="BC817-40" constant="no"/>
 </technology>
 </technologies>
 </device>
