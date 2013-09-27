@@ -38,7 +38,7 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
@@ -1264,6 +1264,45 @@ Source: http://www.hirose.co.jp/cataloge_hp/e58618038.pdf</description>
 <rectangle x1="-2.8956" y1="-1.905" x2="-2.1336" y2="1.905" layer="21"/>
 <rectangle x1="2.1336" y1="-1.905" x2="2.8956" y2="1.905" layer="21"/>
 </package>
+<package name="OTJ-4/ORJ-4">
+<wire x1="-7.85" y1="4.5" x2="7.85" y2="4.5" width="0.127" layer="21"/>
+<wire x1="7.85" y1="4.5" x2="7.85" y2="-4.5" width="0.127" layer="21"/>
+<wire x1="7.85" y1="-4.5" x2="-7.85" y2="-4.5" width="0.127" layer="21"/>
+<wire x1="-7.85" y1="-4.5" x2="-7.85" y2="4.5" width="0.127" layer="21"/>
+<smd name="P$1" x="10" y="0" dx="1.5" dy="3" layer="1" rot="R90"/>
+<smd name="P$2" x="10" y="2" dx="1.5" dy="3" layer="1" rot="R90"/>
+<smd name="P$3" x="10" y="-2" dx="1.5" dy="3" layer="1" rot="R90"/>
+<hole x="-4.85" y="0" drill="1"/>
+<hole x="4.15" y="0" drill="1"/>
+<pad name="5E" x="-5.2" y="-3.9" drill="1.5" shape="square"/>
+<pad name="1A" x="-6.15" y="2.5" drill="1.5" shape="square"/>
+<pad name="4D" x="-1.55" y="-2.5" drill="1.5" shape="square"/>
+<pad name="3C" x="-2.65" y="2.5" drill="1.5" shape="square"/>
+<pad name="2B" x="2.15" y="2.8" drill="1.5" shape="square"/>
+</package>
+<package name="736880-49">
+<description>CLIFF PHS-6A</description>
+<wire x1="-4.92" y1="3" x2="-4.92" y2="-3" width="0.4096" layer="51"/>
+<wire x1="2.08" y1="5.5" x2="-4.92" y2="5.5" width="0.4096" layer="21"/>
+<wire x1="-4.92" y1="5.5" x2="-4.92" y2="4.25" width="0.4096" layer="21"/>
+<wire x1="-4.92" y1="4.25" x2="-4.92" y2="3" width="0.4096" layer="21"/>
+<wire x1="2.08" y1="-5.5" x2="-4.92" y2="-5.5" width="0.4096" layer="21"/>
+<wire x1="-4.92" y1="-5.5" x2="-4.92" y2="-4" width="0.4096" layer="21"/>
+<wire x1="-4.92" y1="-4" x2="-4.92" y2="-3" width="0.4096" layer="21"/>
+<wire x1="-5.42" y1="-3.5" x2="-11.92" y2="-3.5" width="0.4096" layer="21"/>
+<wire x1="-11.92" y1="-3.5" x2="-12.42" y2="-3" width="0.4096" layer="21" curve="-90"/>
+<wire x1="-12.42" y1="-3" x2="-12.42" y2="3.25" width="0.4096" layer="21"/>
+<wire x1="-12.42" y1="3.25" x2="-11.92" y2="3.75" width="0.4096" layer="21" curve="-90"/>
+<wire x1="-11.92" y1="3.75" x2="-5.42" y2="3.75" width="0.4096" layer="21"/>
+<wire x1="-4.92" y1="4.25" x2="-5.42" y2="3.75" width="0.4096" layer="21" curve="-90"/>
+<wire x1="-5.42" y1="-3.5" x2="-4.92" y2="-4" width="0.4096" layer="21" curve="-90"/>
+<pad name="2@3" x="-4.92" y="0" drill="2.8" diameter="4"/>
+<pad name="2" x="0.08" y="5.5" drill="2.8" diameter="4"/>
+<pad name="2@2" x="0.08" y="-5.5" drill="2.8" diameter="4"/>
+<text x="2.54" y="1.27" size="1.27" layer="25">&gt;NAME</text>
+<text x="2.54" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
+<pad name="1" x="2.08" y="0" drill="2.2" diameter="3.81"/>
+</package>
 </packages>
 <symbols>
 <symbol name="KL">
@@ -1502,6 +1541,15 @@ Source: http://www.hirose.co.jp/cataloge_hp/e58618038.pdf</description>
 <pin name="6" x="7.62" y="5.08" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="7" x="7.62" y="7.62" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="8" x="7.62" y="10.16" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+</symbol>
+<symbol name="CINCH">
+<wire x1="-5.334" y1="3.81" x2="-5.334" y2="-3.81" width="0.254" layer="94" curve="-180"/>
+<text x="0" y="3.81" size="1.778" layer="95">&gt;NAME</text>
+<text x="0" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
+<rectangle x1="-5.08" y1="-0.508" x2="-2.54" y2="0.508" layer="94"/>
+<pin name="1" x="2.54" y="0" visible="off" length="middle" direction="pas" rot="R180"/>
+<pin name="2" x="2.54" y="-2.54" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="2@2" x="0" y="-2.54" visible="off" length="short" direction="pas" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1964,6 +2012,41 @@ Standard 11-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <attribute name="OC_FARNELL" value="1708087" constant="no"/>
 <attribute name="OC_TME" value="DG301-5.0-3P12" constant="no"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CLIFF_OTJ-4/ORJ-4">
+<gates>
+<gate name="G$1" symbol="JACK_HEADPHONE" x="0" y="-5.08"/>
+</gates>
+<devices>
+<device name="" package="OTJ-4/ORJ-4">
+<connects>
+<connect gate="G$1" pin="GND" pad="2B"/>
+<connect gate="G$1" pin="LEFT" pad="3C"/>
+<connect gate="G$1" pin="RIGHT" pad="4D"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PHS-6A" prefix="X">
+<description>&lt;b&gt;Cinch Connector&lt;/b&gt; ( RCA Jack )</description>
+<gates>
+<gate name="G$1" symbol="CINCH" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="736880-49">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="2@2" pad="2@2 2@3"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
