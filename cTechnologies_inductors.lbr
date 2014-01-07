@@ -993,6 +993,18 @@ molded</description>
 <text x="-3" y="3.2" size="1.27" layer="25">&gt;NAME</text>
 <text x="-3" y="-4.5" size="1.27" layer="27">&gt;VALUE</text>
 </package>
+<package name="DLJ3015">
+<smd name="1" x="-1.2" y="0" dx="1" dy="1.6" layer="1"/>
+<smd name="2" x="1.2" y="0" dx="1" dy="1.6" layer="1"/>
+<wire x1="-1.45" y1="1.45" x2="1.45" y2="1.45" width="0.127" layer="20"/>
+<wire x1="1.45" y1="-1.45" x2="-1.45" y2="-1.45" width="0.127" layer="20"/>
+<wire x1="-1.45" y1="-1.45" x2="-1.45" y2="-0.9" width="0.127" layer="20"/>
+<wire x1="-1.45" y1="0.9" x2="-1.45" y2="1.45" width="0.127" layer="20"/>
+<wire x1="1.45" y1="-1.45" x2="1.45" y2="-0.9" width="0.127" layer="20"/>
+<wire x1="1.45" y1="1.45" x2="1.45" y2="0.9" width="0.127" layer="20"/>
+<text x="-1.4" y="1.6" size="0.6096" layer="25">&gt;NAME</text>
+<text x="-1.4" y="-2.2" size="0.6096" layer="25">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="INDUCTOR">
@@ -1317,6 +1329,22 @@ no PN&lt;br&gt;
 </technologies>
 </device>
 <device name="DR127" package="DR127">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DLJ3015" prefix="I">
+<gates>
+<gate name="G$1" symbol="INDUCTOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DLJ3015">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
