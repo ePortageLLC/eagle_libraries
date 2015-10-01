@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1779,6 +1779,25 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <rectangle x1="0.7112" y1="-1.2954" x2="1.1684" y2="-0.7112" layer="51"/>
 <rectangle x1="-1.1684" y1="-1.2954" x2="-0.7112" y2="-0.7112" layer="51"/>
 </package>
+<package name="DO214AC+MINIMELF">
+<description>DO214AC+MINIMELF hybrid package. Monodirectional.</description>
+<wire x1="-2.0638" y1="0.7938" x2="2.0638" y2="0.7938" width="0.127" layer="51"/>
+<wire x1="-2.0638" y1="-0.7938" x2="2.0638" y2="-0.7938" width="0.127" layer="51"/>
+<wire x1="0" y1="0" x2="-0.635" y2="0.4763" width="0.127" layer="21"/>
+<wire x1="-0.635" y1="0.4763" x2="-0.635" y2="0" width="0.127" layer="21"/>
+<wire x1="-0.635" y1="0" x2="-0.635" y2="-0.4763" width="0.127" layer="21"/>
+<wire x1="-0.635" y1="-0.4763" x2="0" y2="0" width="0.127" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="0.4763" width="0.127" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="-0.4763" width="0.127" layer="21"/>
+<wire x1="0" y1="0" x2="1.1113" y2="0" width="0.127" layer="21"/>
+<wire x1="-0.635" y1="0" x2="-1.1113" y2="0" width="0.127" layer="21"/>
+<smd name="P$2" x="2.0638" y="0" dx="2.1226" dy="1.8" layer="1"/>
+<smd name="P$1" x="-2.0637" y="0.0001" dx="2.1226" dy="1.8" layer="1"/>
+<text x="-3.175" y="1.5875" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.175" y="-2.8575" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-2.2225" y1="-0.7938" x2="-1.4288" y2="0.7938" layer="51"/>
+<rectangle x1="1.4289" y1="-0.7938" x2="2.2225" y2="0.7938" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="D">
@@ -2030,6 +2049,40 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <attribute name="OC_FARNELL" value="1797834" constant="no"/>
 <attribute name="OC_TME" value="BAS70-05" constant="no"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SK">
+<gates>
+<gate name="G$1" symbol="DIODE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="12-DIO" package="DO214AC+MINIMELF">
+<connects>
+<connect gate="G$1" pin="A" pad="P$1"/>
+<connect gate="G$1" pin="C" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="13-DIO" package="DO214AC+MINIMELF">
+<connects>
+<connect gate="G$1" pin="A" pad="P$1"/>
+<connect gate="G$1" pin="C" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="14-DIO" package="DO214AC+MINIMELF">
+<connects>
+<connect gate="G$1" pin="A" pad="P$1"/>
+<connect gate="G$1" pin="C" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
