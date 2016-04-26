@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="7.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -242,6 +242,75 @@ Source: http://www.fairchildsemi.com/pf/4N/4N35-M.html</description>
 <text x="-2" y="2.5" size="0.6096" layer="25">&gt;NAME</text>
 <text x="-2" y="-3" size="0.6096" layer="27">&gt;VALUE</text>
 </package>
+<package name="SMD-DIP16">
+<description>&lt;b&gt;SFH&lt;/b&gt;</description>
+<wire x1="-10.02" y1="-3.4" x2="10.02" y2="-3.4" width="0.127" layer="21"/>
+<wire x1="10.02" y1="-3.4" x2="10.02" y2="3.4" width="0.127" layer="21"/>
+<wire x1="10.02" y1="3.4" x2="-10.02" y2="3.4" width="0.127" layer="21"/>
+<wire x1="-10.02" y1="3.4" x2="-10.02" y2="-3.4" width="0.127" layer="21"/>
+<wire x1="9.525" y1="2.54" x2="9.525" y2="1.27" width="0.127" layer="21" curve="180"/>
+<wire x1="9.525" y1="2.54" x2="9.96" y2="2.54" width="0.127" layer="21"/>
+<wire x1="9.525" y1="1.27" x2="9.96" y2="1.27" width="0.127" layer="21"/>
+<smd name="4" x="1.27" y="5.08" dx="1.4" dy="1.8" layer="1"/>
+<smd name="5" x="-1.27" y="5.08" dx="1.4" dy="1.8" layer="1"/>
+<smd name="12" x="-1.27" y="-5.08" dx="1.4" dy="1.8" layer="1"/>
+<smd name="13" x="1.27" y="-5.08" dx="1.4" dy="1.8" layer="1"/>
+<text x="12.7" y="-2.54" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="-11.43" y="-2.54" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<rectangle x1="-1.725" y1="3.475" x2="-0.85" y2="5.625" layer="51"/>
+<rectangle x1="0.815" y1="3.475" x2="1.69" y2="5.625" layer="51"/>
+<rectangle x1="-1.69" y1="-5.625" x2="-0.815" y2="-3.475" layer="51" rot="R180"/>
+<rectangle x1="0.85" y1="-5.625" x2="1.725" y2="-3.475" layer="51" rot="R180"/>
+<smd name="6" x="-3.81" y="5.08" dx="1.4" dy="1.8" layer="1"/>
+<smd name="7" x="-6.35" y="5.08" dx="1.4" dy="1.8" layer="1"/>
+<smd name="11" x="-3.81" y="-5.08" dx="1.4" dy="1.8" layer="1"/>
+<smd name="10" x="-6.35" y="-5.08" dx="1.4" dy="1.8" layer="1"/>
+<smd name="3" x="3.81" y="5.08" dx="1.4" dy="1.8" layer="1"/>
+<smd name="2" x="6.35" y="5.08" dx="1.4" dy="1.8" layer="1"/>
+<smd name="1" x="8.89" y="5.08" dx="1.4" dy="1.8" layer="1"/>
+<smd name="14" x="3.81" y="-5.08" dx="1.4" dy="1.8" layer="1"/>
+<smd name="15" x="6.35" y="-5.08" dx="1.4" dy="1.8" layer="1"/>
+<smd name="16" x="8.89" y="-5.08" dx="1.4" dy="1.8" layer="1"/>
+<smd name="9" x="-8.89" y="-5.08" dx="1.4" dy="1.8" layer="1"/>
+<smd name="8" x="-8.89" y="5.08" dx="1.4" dy="1.8" layer="1"/>
+<rectangle x1="3.355" y1="3.475" x2="4.23" y2="5.625" layer="51"/>
+<rectangle x1="5.895" y1="3.475" x2="6.77" y2="5.625" layer="51"/>
+<rectangle x1="8.435" y1="3.475" x2="9.31" y2="5.625" layer="51"/>
+<rectangle x1="-4.265" y1="3.475" x2="-3.39" y2="5.625" layer="51"/>
+<rectangle x1="-6.805" y1="3.475" x2="-5.93" y2="5.625" layer="51"/>
+<rectangle x1="-9.345" y1="3.475" x2="-8.47" y2="5.625" layer="51"/>
+<rectangle x1="-4.23" y1="-5.625" x2="-3.355" y2="-3.475" layer="51" rot="R180"/>
+<rectangle x1="-6.77" y1="-5.625" x2="-5.895" y2="-3.475" layer="51" rot="R180"/>
+<rectangle x1="-9.31" y1="-5.625" x2="-8.435" y2="-3.475" layer="51" rot="R180"/>
+<rectangle x1="3.39" y1="-5.625" x2="4.265" y2="-3.475" layer="51" rot="R180"/>
+<rectangle x1="5.93" y1="-5.625" x2="6.805" y2="-3.475" layer="51" rot="R180"/>
+<rectangle x1="8.47" y1="-5.625" x2="9.345" y2="-3.475" layer="51" rot="R180"/>
+</package>
+<package name="TLP281-4">
+<wire x1="-5.15" y1="2.2" x2="-5.15" y2="-2.2" width="0.127" layer="21"/>
+<wire x1="-5.15" y1="-2.2" x2="5.15" y2="-2.2" width="0.127" layer="21"/>
+<wire x1="5.15" y1="-2.2" x2="5.15" y2="2.2" width="0.127" layer="21"/>
+<wire x1="5.15" y1="2.2" x2="-5.15" y2="2.2" width="0.127" layer="21"/>
+<smd name="1" x="-4.445" y="-3.04" dx="1.5" dy="0.65" layer="1" rot="R90"/>
+<smd name="2" x="-3.175" y="-3.04" dx="1.5" dy="0.65" layer="1" rot="R90"/>
+<smd name="3" x="-1.905" y="-3.04" dx="1.5" dy="0.65" layer="1" rot="R90"/>
+<smd name="4" x="-0.635" y="-3.04" dx="1.5" dy="0.65" layer="1" rot="R90"/>
+<smd name="5" x="0.635" y="-3.04" dx="1.5" dy="0.65" layer="1" rot="R90"/>
+<smd name="6" x="1.905" y="-3.04" dx="1.5" dy="0.65" layer="1" rot="R90"/>
+<smd name="7" x="3.175" y="-3.04" dx="1.5" dy="0.65" layer="1" rot="R90"/>
+<smd name="8" x="4.445" y="-3.04" dx="1.5" dy="0.65" layer="1" rot="R90"/>
+<smd name="9" x="4.445" y="3.04" dx="1.5" dy="0.65" layer="1" rot="R90"/>
+<smd name="10" x="3.175" y="3.04" dx="1.5" dy="0.65" layer="1" rot="R90"/>
+<smd name="11" x="1.905" y="3.04" dx="1.5" dy="0.65" layer="1" rot="R90"/>
+<smd name="12" x="0.635" y="3.04" dx="1.5" dy="0.65" layer="1" rot="R90"/>
+<smd name="13" x="-0.635" y="3.04" dx="1.5" dy="0.65" layer="1" rot="R90"/>
+<smd name="14" x="-1.905" y="3.04" dx="1.5" dy="0.65" layer="1" rot="R90"/>
+<smd name="15" x="-3.175" y="3.04" dx="1.5" dy="0.65" layer="1" rot="R90"/>
+<smd name="16" x="-4.445" y="3.04" dx="1.5" dy="0.65" layer="1" rot="R90"/>
+<circle x="-4.195" y="-1.02" radius="0.3015375" width="0.127" layer="21"/>
+<text x="-5.5" y="-2" size="0.8128" layer="25" rot="R90">&gt;NAME</text>
+<text x="6.25" y="-2.25" size="0.8128" layer="27" rot="R90">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="NPN">
@@ -396,6 +465,43 @@ Source: http://www.fairchildsemi.com/pf/4N/4N35-M.html</description>
 <text x="-7.62" y="10.16" size="1.778" layer="95">&gt;NAME</text>
 <text x="-7.62" y="-12.7" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
+<symbol name="CE">
+<wire x1="0.508" y1="1.524" x2="2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0.508" y1="-1.524" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="1.778" y1="-1.524" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="1.27" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="1.778" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="-3.7338" y1="-3.3782" x2="-2.8448" y2="-2.4892" width="0.254" layer="94"/>
+<wire x1="-3.683" y1="-2.8194" x2="-2.8448" y2="-2.4892" width="0.254" layer="94"/>
+<wire x1="-2.8448" y1="-2.4892" x2="-3.2004" y2="-3.3274" width="0.254" layer="94"/>
+<wire x1="-4.5212" y1="-2.667" x2="-3.6322" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="-4.4704" y1="-2.1082" x2="-3.6322" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="-3.6322" y1="-1.778" x2="-3.9878" y2="-2.6162" width="0.254" layer="94"/>
+<text x="-12.7" y="5.08" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-12.7" y="7.62" size="1.778" layer="95">&gt;NAME</text>
+<rectangle x1="-0.254" y1="-2.54" x2="0.508" y2="2.54" layer="94"/>
+<pin name="C" x="2.54" y="5.08" visible="pad" length="short" rot="R270"/>
+<pin name="E" x="2.54" y="-5.08" visible="pad" length="short" rot="R90"/>
+</symbol>
+<symbol name="LED-RIGHT">
+<wire x1="0" y1="2.54" x2="0" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="1.27" x2="-1.27" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="1.27" x2="0" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.27" x2="1.27" y2="1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-1.27" x2="0" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.27" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="1.3462" y1="-1.7018" x2="2.2352" y2="-2.5908" width="0.254" layer="94"/>
+<wire x1="1.397" y1="-2.2606" x2="2.2352" y2="-2.5908" width="0.254" layer="94"/>
+<wire x1="2.2352" y1="-2.5908" x2="1.8796" y2="-1.7526" width="0.254" layer="94"/>
+<wire x1="0.5588" y1="-2.413" x2="1.4478" y2="-3.302" width="0.254" layer="94"/>
+<wire x1="0.6096" y1="-2.9718" x2="1.4478" y2="-3.302" width="0.254" layer="94"/>
+<wire x1="1.4478" y1="-3.302" x2="1.0922" y2="-2.4638" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.27" x2="0" y2="-2.54" width="0.1524" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="95" rot="R90">&gt;NAME</text>
+<text x="5.08" y="-2.54" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="A" x="0" y="5.08" visible="pad" length="short" rot="R270"/>
+<pin name="K" x="0" y="-5.08" visible="pad" length="short" rot="R90"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="KP-3216P3C" prefix="T">
@@ -497,6 +603,86 @@ collector type.The photodetector has an internal Faraday shield that provides ag
 <connect gate="G$1" pin="LC" pad="3"/>
 <connect gate="G$1" pin="OUT" pad="5"/>
 <connect gate="G$1" pin="VCC" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ISP521" prefix="IC">
+<description>5.3 kV TRIOS High Reliability Optocoupler</description>
+<gates>
+<gate name="Q1" symbol="CE" x="5.08" y="0"/>
+<gate name="LED1" symbol="LED-RIGHT" x="-5.08" y="0"/>
+<gate name="LED2" symbol="LED-RIGHT" x="-5.08" y="-17.78"/>
+<gate name="Q2" symbol="CE" x="5.08" y="-17.78"/>
+<gate name="LED3" symbol="LED-RIGHT" x="-5.08" y="-35.56"/>
+<gate name="Q3" symbol="CE" x="5.08" y="-35.56"/>
+<gate name="LED4" symbol="LED-RIGHT" x="-5.08" y="-53.34"/>
+<gate name="Q4" symbol="CE" x="5.08" y="-53.34"/>
+</gates>
+<devices>
+<device name="-4X" package="SMD-DIP16">
+<connects>
+<connect gate="LED1" pin="A" pad="1"/>
+<connect gate="LED1" pin="K" pad="2"/>
+<connect gate="LED2" pin="A" pad="3"/>
+<connect gate="LED2" pin="K" pad="4"/>
+<connect gate="LED3" pin="A" pad="5"/>
+<connect gate="LED3" pin="K" pad="6"/>
+<connect gate="LED4" pin="A" pad="7"/>
+<connect gate="LED4" pin="K" pad="8"/>
+<connect gate="Q1" pin="C" pad="10"/>
+<connect gate="Q1" pin="E" pad="9"/>
+<connect gate="Q2" pin="C" pad="12"/>
+<connect gate="Q2" pin="E" pad="11"/>
+<connect gate="Q3" pin="C" pad="14"/>
+<connect gate="Q3" pin="E" pad="13"/>
+<connect gate="Q4" pin="C" pad="16"/>
+<connect gate="Q4" pin="E" pad="15"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MF" value="VISHAY/TELEFUNKEN" constant="no"/>
+<attribute name="MPN" value="SFH6156-4T" constant="no"/>
+<attribute name="OC_FARNELL" value="1612479" constant="no"/>
+<attribute name="OC_NEWARK" value="21H7733" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TLP281">
+<gates>
+<gate name="D1" symbol="LED-RIGHT" x="-5.08" y="30.48"/>
+<gate name="T1" symbol="NPN" x="10.16" y="30.48"/>
+<gate name="D2" symbol="LED-RIGHT" x="-5.08" y="10.16"/>
+<gate name="T2" symbol="NPN" x="10.16" y="10.16"/>
+<gate name="D3" symbol="LED-RIGHT" x="-5.08" y="-10.16"/>
+<gate name="T3" symbol="NPN" x="10.16" y="-10.16"/>
+<gate name="D4" symbol="LED-RIGHT" x="-5.08" y="-30.48"/>
+<gate name="T4" symbol="NPN" x="10.16" y="-30.48"/>
+</gates>
+<devices>
+<device name="-4" package="TLP281-4">
+<connects>
+<connect gate="D1" pin="A" pad="1"/>
+<connect gate="D1" pin="K" pad="2"/>
+<connect gate="D2" pin="A" pad="3"/>
+<connect gate="D2" pin="K" pad="4"/>
+<connect gate="D3" pin="A" pad="5"/>
+<connect gate="D3" pin="K" pad="6"/>
+<connect gate="D4" pin="A" pad="7"/>
+<connect gate="D4" pin="K" pad="8"/>
+<connect gate="T1" pin="C" pad="16"/>
+<connect gate="T1" pin="E" pad="15"/>
+<connect gate="T2" pin="C" pad="14"/>
+<connect gate="T2" pin="E" pad="13"/>
+<connect gate="T3" pin="C" pad="12"/>
+<connect gate="T3" pin="E" pad="11"/>
+<connect gate="T4" pin="C" pad="10"/>
+<connect gate="T4" pin="E" pad="9"/>
 </connects>
 <technologies>
 <technology name=""/>
